@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Resume - Start Bootstrap Theme
+        title Arthur McGregor - Resume and Portfolio
 
         link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
 
@@ -27,25 +27,27 @@ html(lang='en')
         // Navigation
         nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
             a.navbar-brand.js-scroll-trigger(href='#page-top')
-                span.d-block.d-lg-none Clarence Taylor
+                span.d-block.d-lg-none Arthur McGregor
                 span.d-none.d-lg-block
                     img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg', alt='...')
             button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                span.navbar-toggler-icon
-            #navbarResponsive.collapse.navbar-collapse
-                ul.navbar-nav
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#about') About
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#experience') Experience
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#education') Education
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#skills') Skills
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#interests') Interests
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#awards') Awards
+              span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+              ul.navbar-nav
+                li.nav-item
+                  a.nav-link.js-scroll-trigger(href='#about') About
+                li.nav-item
+                  a.nav-link.js-scroll-trigger(href='#portfolio') Portfolio
+                li.nav-item
+                  a.nav-link.js-scroll-trigger(href='#education') Education
+                li.nav-item
+                  a.nav-link.js-scroll-trigger(href='#skills') Skills
+                li.nav-item
+                  a.nav-link.js-scroll-trigger(href='#teacher') Teaching Experience
+                li.nav-item
+                  a.nav-link.js-scroll-trigger(href='#volunteer') Volunteer Experience
+                li.nav-item
+                  a.nav-link.js-scroll-trigger(href='#interests') Interests
 
         // Page Content
         .container-fluid.p-0
@@ -54,65 +56,96 @@ html(lang='en')
             section#about.resume-section
                 .resume-section-content
                     h1.mb-0
-                        | Clarence 
-                        span.text-primary Taylor
+                        | Arthur
+                        span.text-primary McGregor
                     .subheading.mb-5
-                        | 3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 · 
-                        a(href='mailto:name@email.com') name@email.com
+                        | Software Developer · Christchurch, New Zealand ·                  
+                        a(href='mailto:arthur.mcgregor@gmail.com' target='_blank') arthur.mcgregor@gmail.com
                     p.lead.mb-5
-                        | I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
+                        | I am a committed, motivated and adaptable professional. I am an effective problem-solver with a degree in Civil Engineering. After 9 years as a registered teacher, I can communicate clearly to diverse audiences. With broad volunteer experience I have strong collaboration and leadership skills. This year I am completing a Graduate Diploma in IT to develop my technical skills and adapt my workflow. I am excited about this career change and will be ready to enter the IT industry in November.
                     .social-icons
-                        a.social-icon(href='#!')
+                        a.social-icon(href='mailto:arthur.mcgregor@gmail.com' target='_blank')
+                            i.fa.fa-at
+                        a.social-icon(href='tel:+64274690046')
+                            i.fa.fa-phone
+                        a.social-icon(href='https://linkedin.com/in/arthurmcgregor/' target='_blank')
                             i.fab.fa-linkedin-in
-                        a.social-icon(href='#!')
+                        a.social-icon(href='https://github.com/arthurmcgregor' target='_blank')
                             i.fab.fa-github
-                        a.social-icon(href='#!')
-                            i.fab.fa-twitter
-                        a.social-icon(href='#!')
-                            i.fab.fa-facebook-f
 
             hr.m-0
 
-            // Experience
-            section#experience.resume-section
+            // Portfolio
+            section#portfolio.resume-section
                .resume-section-content
-                    h2.mb-5 Experience
+                    h2.mb-5 Portfolio
+                    // Hiko
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 hiko.kiwi
+                            .subheading.mb-3 Electric Vehicle Charging Map (personal project)
+                            p
+                              a(href='https://hiko.kiwi' target='_blank') hiko.kiwi
+                            p
+                                | This personal project has been an enjoyable learning experience. As an electric vehicle (EV) driver, I need to know where the nearest fast charge stations are. Although there are many maps already available, this is a unique solution because it shows full details for current stations, as well as under construction and future chargers. In addition, you can view a list of all chargers and identify the nearest chargers to your current position. The app is a fully responsive, progressive web app, with Google Analytics tracking and automatic deployment from GitHub.
+                            p
+                              | hiko.kiwi has been built in VueJS, is hosted on Google&apos;s Firebase platform, with a supporting server built in NodeJS and hosted on Heroku. The map service is provided by Mapbox which allows for a high level of customisation. The server runs a script daily to fetch the station data from two sources. The first EVROAM, a REST API which provides a JSON of all active and under construction stations that meet NZTA criteria. The second is a Google Map which displays all active, under construction and future stations. This requires processing from a KML into a GeoJSON and filtering to remove duplication.
+                            //- ul.list-inline.list-icons
+                            //-   // VueJS
+                            //-   li.list-inline-item
+                            //-     i.devicon-vuejs-plain.devicon-2x
+                            //-   // Bootstrap
+                            //-   li.list-inline-item
+                            //-     i.devicon-bootstrap-plain.devicon-2x
+                            //-   // Google aka firebase
+                            //-   li.list-inline-item
+                            //-     i.devicon-google-plain.devicon-2x
+                            //-     // <img src="./img/Firebase_Logo_Vertical_Lockup.svg" height="72px" width="auto"/>
+                            //-   // NodeJS
+                            //-   li.list-inline-item
+                            //-     i.devicon-nodejs-plain.devicon-2x
+                            //-   // Heroku
+                            //-   li.list-inline-item
+                            //-     i.devicon-heroku-plain.devicon-2x
+                            //-   // Github
+                            //-   li.list-inline-item
+                            //-     i.devicon-github-plain-wordmark.devicon-2x
+                            //-   // Travis
+                            //-   li.list-inline-item
+                            //-     i.devicon-travis-plain.devicon-2x
+                        .flex-shrink-0
+                            span.text-primary 2018
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h3.mb-0 Senior Web Developer
-                            .subheading.mb-3 Intelitec Solutions
+                            h3.mb-0 Cacophony Project
+                            .subheading.mb-3 Open Source
                             p
-                                | Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-                        .flex-shrink-0
-                            span.text-primary March 2013 - Present
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 Web Developer
-                            .subheading.mb-3 Intelitec Solutions
+                              | The 
+                              a(href='https://cacophony.org.nz/' target='_blank') Cacophony Project
+                              |  is using modern technology to eliminate predators such as possums, rats and stoats, so that we can restore our dawn chorus. The &apos;cacophonator&apos; will lure predators with sound and light, use a thermal camera and machine learning algorithms to identify the predator, and finally eliminate the predator using a mechanised air gun that fires a sticky poison pellet.
                             p
-                                | Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-                        .flex-shrink-0
-                            span.text-primary December 2011 - March 2013
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 Junior Web Designer
-                            .subheading.mb-3 Shout! Media Productions
+                              | I have been involved since early June 2018 as a volunteer contributor. I am primarily helping to improve the web portal which allows for remote monitoring of the cacophonators. In particular, I have assisted with the transition from Node/Express to VueJS which has involved rebuilding the app from the ground up to be more mobile responsive and easier to maintain in the long term. Most of my time has been spent building the 
+                              a(href='https://github.com/TheCacophonyProject/cacophony-web-vuex/tree/master/src/components/QueryRecordings' target='_blank') query interface
+                              |  and 
+                              a(href='https://github.com/TheCacophonyProject/cacophony-web-vuex/blob/master/src/views/RecordingView.vue' target='_blank') recording view
+                              |  page. I am enjoying working on a project that aligns with my passions as an environmentalist, as well as learning new skills and working with a diverse team.
                             p
-                                | Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
+                              a(href='https://github.com/TheCacophonyProject/cacophony-browse/pulls?q=is%3Apr+author%3Aarthurmcgregor+is%3Aclosed' target='_blank') View my contributions on GitHub
+                            ul.list-inline.list-icons
+                              // VueJS
+                              li.list-inline-item
+                                i.devicon-vuejs-plain.devicon-2x
+                              // Bootstrap
+                              li.list-inline-item
+                                i.devicon-bootstrap-plain.devicon-2x
+                              // Github
+                              li.list-inline-item
+                                i.devicon-github-plain-wordmark.devicon-2x
+                            .embed-responsive.embed-responsive-16by9
+                              iframe.embed-responsive-item(src='https://docs.google.com/presentation/d/e/2PACX-1vTMFGuvkXaKA4n6yuWeCuPIZ5lfYuTfh9n0M-0Mfor8NJW0p_1Xl-fJM62SewLL0T8tPU8nYbP07tE_/embed?start=true&loop=true&delayms=4000&rm=minimal' frameborder='0' width='960' height='569' allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true')
                         .flex-shrink-0
-                            span.text-primary July 2010 - December 2011
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between
-                        .flex-grow-1
-                            h3.mb-0 Web Design Intern
-                            .subheading.mb-3 Shout! Media Productions
-                            p
-                                | Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
-                        .flex-shrink-0
-                            span.text-primary September 2008 - June 2010
+                            span.text-primary 2018
 
             hr.m-0
 
@@ -123,20 +156,87 @@ html(lang='en')
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h3.mb-0 University of Colorado Boulder
-                            .subheading.mb-3 Bachelor of Science
-                            div Computer Science - Web Development Track
-                            p GPA: 3.23
+                            h3.mb-0 Graduate Diplome in Information and Communication Technologies
+                            .subheading.mb-3 SIGNAL ICT Graduate School (Ara and UC)
+                            p
+                              | Through engaging industry-related projects my team and I have applied agile methodology to create software solutions. I have learnt new technologies appropriate to the needs of each project and held various roles within the group to identify the client requirements and develop a viable product. The Shift programme included visiting a variety of IT companies which has all combined to affirm my decision to change careers.
+                            ul
+                              li
+                                | Electives:
+                                ul
+                                  li
+                                    a(href='http://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC122&occurrence=15S2(C)&year=2015' target='_blank') COSC 122
+                                    | : Introduction to Computer Science
+                                    br
+                                    |                       This course has covered fundamental data structures and algorithms, including recursion, sorting, searching, trees and graphs, implemented in Python.
+                                  li
+                                    a(href='http://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC265&occurrence=18S2(C)&year=2018' target='_blank') COSC 265
+                                    | : Relational Database Systems
+                                    br
+                                    |                         This course has covered database design, the relational data model, SQL, normalisation, and physical level implementation, using Oracle.
+                              li
+                                | Industry project at 
+                                a(href='https://orbica.world' target='_blank') Orbica
+                              ul
+                                li
+                                  | My internship at Orbica has involved creating a website to support the onboarding process for a product under development. Working with another intern and interacting with the wider product team, I have identified user requirements and developed user personas. This led to a range of prototype designs that were refined into a final product. This was integrated with the existing CMS to ensure the project was manageable in the long term.
+                              li
+                                | Group projects
+                                ul
+                                  li Komodo Monitr Player Dashboard
+                                  li Cerebral Fix Device Management
+                                  li Blackjack Game
                         .flex-shrink-0
-                            span.text-primary August 2006 - May 2010
+                            span.text-primary 2018
 
                     .d-flex.flex-column.flex-md-row.justify-content-between
                         .flex-grow-1
-                            h3.mb-0 James Buchanan High School
-                            .subheading.mb-3 Technology Magnet Program
-                            p GPA: 3.56
+                            h3.mb-0 Graduate Diplome in Secondary Teaching
+                            .subheading.mb-3 New Zealand Graduate School of Education
+                            p
+                              | My teacher training taught me the importance of thorough planning and building positive relationships. With regular observation and feedback, I developed my classroom skills alongside resilience and adaptability with placements at four secondary schools. I had to work in collaboration with my supervising teachers to ensure continuity for students as I was trusted with delivering high quality content to senior physics classes.
+                            ul
+                              li
+                                | Teaching subjects:
+                                ul
+                                  li Science
+                                  li Physics
+                                  li Mathematics
+                              li
+                                | Teaching Placements:
+                                ul
+                                  li Rangiora High School
+                                  li Riccarton High School
+                                  li Shirley Boys&apos; High School
+                                  li Burnside High School
                         .flex-shrink-0
-                            span.text-primary August 2002 - May 2006
+                            span.text-primary 2008
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between
+                        .flex-grow-1
+                            h3.mb-0 Bachelor of Engineering with Honours
+                            .subheading.mb-3 University of Canterbury
+                            p
+                              | My engineering degree developed my analytical problem solving skills. Alongside domain-specific technical courses, such as structural systems and hydraulics, the degree included courses on management, design, mathematics and programming. My final year electives included Geographical Information Systems, Introduction to Macroeconomics, Introductory Psychology and History of Engineering.
+                            ul
+                              li Civil Engineering
+                              li Second class, first division
+                              li UC Emerging Leaders Scholarship (2004)
+                              li Golden Key International Honour Society (2004, 2005)
+                        .flex-shrink-0
+                            span.text-primary 2004 - 2007
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between
+                        .flex-grow-1
+                            h3.mb-0 A Bursary
+                            .subheading.mb-3 Christ's College
+                            ul
+                              li TR Moore Scholarship (2003)
+                              li Ralph Barnett Science Scholarhip (2002, 2003)
+                              li School Prefect; House Prefect
+                              li Captain of Sailing; Head of Drama; Deputy Head of Choir
+                        .flex-shrink-0
+                            span.text-primary 1999 - 2003
 
             hr.m-0
 
@@ -144,107 +244,214 @@ html(lang='en')
             section#skills.resume-section
                 .resume-section-content
                     h2.mb-5 Skills
-                    .subheading.mb-3 Programming Languages & Tools
+                    .subheading.mb-3 Tehnical
                     ul.list-inline.dev-icons
                         li.list-inline-item
-                            i.fab.fa-html5
+                            i.fab.fa-html5(title='HTML5')
                         li.list-inline-item
-                            i.fab.fa-css3-alt
+                            i.fab.fa-css3-alt(title='CSS3')
                         li.list-inline-item
-                            i.fab.fa-js-square
+                            i.fab.fa-js-square(title='JavaScript')
                         li.list-inline-item
-                            i.fab.fa-angular
+                            i.fab.fa-vuejs(title='VueJS')
                         li.list-inline-item
-                            i.fab.fa-react
+                            i.fab.fa-node-js(title='NodeJS')
                         li.list-inline-item
-                            i.fab.fa-node-js
+                            i.fab.fa-npm(title='NPM')
                         li.list-inline-item
-                            i.fab.fa-sass
+                            i.fab.fa-python(title='Python')
                         li.list-inline-item
-                            i.fab.fa-less
+                            i.fab.fa-aws(title='AWS')
                         li.list-inline-item
-                            i.fab.fa-wordpress
+                            i.fab.fa-gitlab(title='GitLab')
                         li.list-inline-item
-                            i.fab.fa-gulp
-                        li.list-inline-item
-                            i.fab.fa-grunt
-                        li.list-inline-item
-                            i.fab.fa-npm
-                    .subheading.mb-3 Workflow
+                            i.fab.fa-github(title='GitHub')
+                    
+                    .subheading.mb-3 Interpseronal Skills
                     ul.fa-ul.mb-0
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Mobile-First, Responsive Design
+                            | Strong team player
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Cross Browser Testing & Debugging
+                            | Effective communicator
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Cross Functional Teams
+                            | Innovative problem-solver
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Agile Development & Scrum
+                            | Quick learner
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Diverse background and experience
 
             hr.m-0
 
-            // Interests
+            // Teaching
+            section#teacher.resume-section
+                .resume-section-content
+                    h2.mb-5 Teaching Experience
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Christ's College
+                            .subheading.mb-3 Teacher of Physics and Technology
+                            ul
+                              li
+                                | I was heavily involved in the deployment of a new IT system &apos;Schoolbox&apos;. This acted as a combined portal, intranet and learning management system. I was able to quickly learn how the system worked and became the lead &apos;Champion&apos; in its delivery. I was given &apos;superuser&apos; admin rights which enabled me to assist my colleagues one-on-one and when leading professional development workshops. I attended the Schoolbox Meetup 2017 in Melbourne where I presented on our implementation journey. I was also a member of the ICT committee.
+                              li
+                                | I developed an innovative cross-curricular course for Year 11 students which combined aspects of Physics with Technology. With a space exploration theme, students developed 
+                                a(href='https://drive.google.com/open?id=0BxTB3onCrYW8c2Jka2dPd0MxNDg' target='_blank') prototype Martian rovers
+                                |  using Arduino microprocessors then used their Physics knowledge to design, build and launch model rockets. Developing this course required me to integrate knowledge and skills from different subject domains, in addition to building positive relationships with a wide range of colleagues. The course was well-received and featured in the 
+                                a(href='https://online.flippingbook.com/view/244193/4/' target='_blank') College Magazine.
+                              li
+                                | I led a team of four staff to review the College academic reporting process. I used my group facilitation skills as we discussed how to reduce workload and improve efficiencies for staff. I summarised our discussion and produced a formal report which was presented to the curriculum leaders for consideration.
+                              li
+                                | I was invited to be a member of the Curriculum Review &apos;Drive Team&apos;. We examined current methodology accross the school, reviewed best practice for curriculum delivery and evaluated options for improvement. I was a strong advocate for change to implement a more modern, flexible and student-focused approach to learning. I presented one option to the staff and subsequently led a workshop discussing the same.
+                              li
+                                | As the Teacher in Charge of General Science, I worked with a colleague to develop learning and assessment resources for the General Science courses. Although traditionally seen as a lesser science at the school (compared to the separate science subjects) I was able to nearly double the number of students taking the courses over 2 years. I did this by clearly communicating the course purpose and then delivering relevant and engaging course material.
+                              li
+                                | Professional Development:
+                                ul
+                                  li TEDxChristchurch 2016
+                                  li SingularityU Summit
+                                  li Computer Science for High Schools Conference
+                                  li Positive Education and Wellbeing Staff Conference
+                              li
+                                | Extra-curriculuar activities:
+                                ul
+                                  li Spirit of New Zealand Liaison
+                                  li Sailing
+                                  li Football
+                            
+                        .flex-shrink-0
+                            span.text-primary 2016 - 2017
+                            
+                            
+                            
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 St Bede's College
+                            .subheading.mb-3 Teacher in Charge of Physics
+                            ul
+                                li e-Learning Committee
+                                li BYOD Class
+                                li Teacher in charge of Physics
+                                li World Challenge
+                                li
+                                  | Extra-curriculuar activities:
+                                  ul
+                                    li Spirit of New Zealand Liaison
+                                    li Various Wednesday sports
+                                    
+                        .flex-shrink-0
+                            span.text-primary 2013 - 2015
+                            
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Cornwallis Academy
+                            .subheading.mb-3 Teacher of Science
+                            p Maidstone, England
+                            
+                        .flex-shrink-0
+                            span.text-primary September 2011 - March 2012
+                            
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Burnside High School
+                            .subheading.mb-3 Teacher of Physics
+                            
+                        .flex-shrink-0
+                            span.text-primary 2010
+                            
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Cashmere High School
+                            .subheading.mb-3 Teacher of Mathematics
+                            
+                        .flex-shrink-0
+                            span.text-primary 2009
+                            
+                        
+
+            hr.m-0
+
+            // Volunteer
+            section#volunteer.resume-section
+                .resume-section-content
+                    h2.mb-5 Volunteer Experience
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Spirit of Adventure Trust
+                            .subheading.mb-3 Various Positions
+                            ul
+                              li
+                                | From late 2013 until 2016? I was an advisory Trustee to the Board. I contribute the perspective of young people, schools and Spirit crew to decision making for this youth development charity.
+                              li
+                                | I have sailed frequently as a Watch Leader on the Spirit of New Zealand, which involves instructing trainees in sail handling and ship manoeuvres whilst taking responsibility for their development through the experiential learning process.
+                              li
+                                | While at university I was heavily involved in the &quot;Spirit Voyagers&apos; Club&quot;. This was a land-based, youth-led, voluntary organisation that ran reunion events for past trainees, supplied Leading Hands as crew onboard, and fundraised to support the Trust. I was the Secretary on the National Committee for 3 years and subsequent Committee Mentor for 2 years.
+                              li
+                                | Awards:
+                                ul.fa-ul
+                                  li
+                                    i.fa-li.fa.fa-trophy.text-warning
+                                    | Topsail Award for services to the Spirit Voyagers&apos; Club, 2011
+                                  li
+                                    i.fa-li.fa.fa-trophy.text-warning
+                                    |  AUSTA Medallion for services to the Spirit Voyagers&apos; Club, 2005
+                            
+                        .flex-shrink-0
+                            span.text-primary 2004 - 2016?
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Sail Training International
+                            .subheading.mb-3 Chairman &amp; NZ Representative, Youth Council
+                            ul
+                                li
+                                  | I was the New Zealand representative and Chairman for the Sail Training International Youth Council. This involved leading around 20 representatives from around the world to develop an international community for youth involved in sail training.
+                                li
+                                  | Through those connections I joined the Cape Windjammers Education Trust in June 2011 for their winter sail training programme. I contributed to both programme design and implementation of the three 5-day voyages in the local area, focusing on youth development and marine education.
+                            
+                        .flex-shrink-0
+                            span.text-primary 2010 - 2014
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 The Challenge Network, UK
+                            .subheading.mb-3 Senior Mentor
+                            ul
+                                li
+                                  | As a Senior Mentor (paid position), I was responsible for 12 young people as they took part in 
+                                  a(href='http://www.ncsthechallenge.org/' target='_blank') The Challenge
+                                  | , an English youth development programme focusing on improving inter-personal skills and increasing community cohesion. The programme was partly residential and highly youth led. I completed two three-week programmes, working with a team of 13 staff and 60 young people each time.
+                            
+                        .flex-shrink-0
+                            span.text-primary 2012
+
+            // Volunteer
             section#interests.resume-section
                 .resume-section-content
                     h2.mb-5 Interests
+
                     p
-                        | Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.
-                    p.mb-0
-                        | When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.
+                        | I am passionate about the environment and tackling climate change. My wife and I are electric vehicle enthusiasts and e-bike converts. We enjoy taking our two dogs for walks and developing our native garden. I am the regular cook at home and my favourite way to spend a sunny weekend would be good food, good wine, and good company.
+                    p
+                        | We lived in England for 1 year and travelled through Africa, Europe and the US. More recently we did an Intrepid Food Tour around India. I enjoy travel photography and you can read my blog 
+                        a(href='https://arthurmcgregor.wordpress.com/' target='_blank') here
+                        | .
+                    img.img-thumbnail(src='assets/img/cycling.jpg' style='max-height: 200px;')
+                    img.img-thumbnail(src='assets/img/burger.jpg' style='max-height: 200px;')
+                    img.img-thumbnail(src='assets/img/hockey.jpg' style='max-height: 200px;')
+                    img.img-thumbnail(src='assets/img/kiwi.jpg' style='max-height: 200px;')
 
-            hr.m-0
-
-            // Awards
-            section#awards.resume-section
-                .resume-section-content
-                    h2.mb-5 Awards & Certifications
-                    ul.fa-ul.mb-0
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | Google Analytics Certified Developer
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | Mobile Web Specialist - Google Certification
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 2
-                            sup nd 
-                            | Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - James Buchanan High School - Hackathon 2006
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 3
-                            sup rd 
-                            | Place - James Buchanan High School - Hackathon 2005
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js')
